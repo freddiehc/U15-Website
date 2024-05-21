@@ -140,6 +140,12 @@ img { /* Make images on the site not draggable / selectable */
     align-items: center;
     justify-content: center;
     box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
+    text-decoration: none;
+    color: black !important;
+}
+
+.box:hover {
+    text-decoration: none;
 }
 
 .w-100 {
