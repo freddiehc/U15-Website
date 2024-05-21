@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hot Beans Web</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+        <a class="navbar-brand" href="#">HBW</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Job Specifications</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Apply</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Courses</a>
+            </li>
+          </ul>
+          <!-- Dark mode toggler -->
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="darkModeSwitch">
+            <label class="custom-control-label" for="darkModeSwitch"></label>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <img draggable="false" (dragstart)="false;" class="header-image" src="image/header-image.png" alt="Header Image">
+      </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 60%;">
+                <div class="card-body">
+                  <h5 class="card-title">News</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">1 Day Ago</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-auto">
+            Variable width content
+          </div>
+        </div>
+
+      <footer class="footer">
+        <div class="container">
+          <span>FOOTER</span>
+        </div>
+      </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- Custom JavaScript for navbar toggle -->
+    <script>
+      $(document).ready(function(){
+        $(".navbar-toggler").on("click", function(){
+          $("#navbarSupportedContent").toggleClass("show");
+        });
+
+        $("#darkModeSwitch").change(function(){
+          if($(this).is(":checked")){
+            $("body").addClass("dark-mode");
+          } else {
+            $("body").removeClass("dark-mode");
+          }
+        });
+      });
+	  
+	  window.ondragstart = function() {return false}
+    </script>
+</body>
+</html>
