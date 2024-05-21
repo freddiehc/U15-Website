@@ -91,6 +91,10 @@ body.dark-mode .card {
     margin-bottom: 0;
 }
 
+.center {
+    text-align: center;
+}
+
 body.dark-mode .card-title {
 	color: white;
 }
