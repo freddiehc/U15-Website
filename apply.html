@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Hot Beans Web | Specifications</title>
+    <title>Hot Beans Web | Apply</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
@@ -23,10 +23,10 @@
             <li class="nav-item">
               <a class="nav-link" href="about-us.html">About Us</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="specifications.html">Job Specifications</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="apply.html">Apply</a>
             </li>
             <li class="nav-item">
@@ -40,29 +40,30 @@
         </div>
       </nav>
 
-      <div class="row" style="padding-top: 5rem;">
+      <div class="row" style="padding: 5rem 0rem;">
         <div class="col-md-6 mx-auto">
           <div class="card">
-            <div class="card-body text-center">
-              <h5 class="card-title">Job Specification</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis mauris eu ullamcorper euismod. Nunc auctor mi ex, vitae tristique
-massa consectetur at. Nunc id pulvinar sapien, in convallis erat. Donec leo ligula, malesuada in libero ut, facilisis feugiat nisl. Etiam ac
-placerat quam, sed faucibus urna. Mauris felis metus, placerat varius tincidunt eget, gravida viverra justo. Donec vel fermentum turpis,
-at laoreet leo.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6 mx-auto">
-          <div class="card">
-            <div class="card-body text-center">
-              <h5 class="card-title">Required Qualifications</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis mauris eu ullamcorper euismod. Nunc auctor mi ex, vitae tristique
-massa consectetur at. Nunc id pulvinar sapien, in convallis erat. Donec leo ligula, malesuada in libero ut, facilisis feugiat nisl. Etiam ac
-placerat quam, sed faucibus urna. Mauris felis metus, placerat varius tincidunt eget, gravida viverra justo. Donec vel fermentum turpis,
-at laoreet leo.</p>
+            <div class="card-body">
+              <h5 class="card-title text-center">Application Form</h5>
+              <form>
+                <div class="form-group">
+                  <label for="fullName">Full Name</label>
+                  <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                  <label for="phoneNumber">Phone Number</label>
+                  <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                  <label for="coverLetter">Cover Letter</label>
+                  <textarea class="form-control" id="coverLetter" rows="3" placeholder="Enter your cover letter"></textarea>
+                </div>
+                <button type="submit" class="btn btn-submit btn-block">Submit</button>
+              </form>
             </div>
           </div>
         </div>
@@ -89,8 +90,8 @@ at laoreet leo.</p>
           }
         });
       });
-	  
-	  window.ondragstart = function() {return false}
+
+      window.ondragstart = function() {return false}
     </script>
 </body>
 </html>

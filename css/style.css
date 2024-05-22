@@ -164,3 +164,14 @@ img { /* Make images on the site not draggable / selectable */
     display: block;
     font-weight: 500;
 }
+
+.btn-submit {
+	background-color: #11CA23;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.btn-submit:hover {
+	color: #d9d9d9 !important;
+}
