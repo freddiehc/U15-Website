@@ -10,7 +10,6 @@ body {
     font-family: 'Khand', sans-serif;
     font-weight: 600;
     margin-bottom: 150px;
-	transition: background-color 0.3s ease;
 }
 
 body.dark-mode {

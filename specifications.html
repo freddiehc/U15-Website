@@ -74,23 +74,10 @@ at laoreet leo.</p>
         </div>
       </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script>
-      $(document).ready(function(){
-        $(".navbar-toggler").on("click", function(){
-          $("#navbarSupportedContent").toggleClass("show");
-        });
-
-        $("#darkModeSwitch").change(function(){
-          if($(this).is(":checked")){
-            $("body").addClass("dark-mode");
-          } else {
-            $("body").removeClass("dark-mode");
-          }
-        });
-      });
-	  
-	  window.ondragstart = function() {return false}
-    </script>
+      <script src="js/dark-mode.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>	  
+        window.ondragstart = function() {return false}
+      </script>
 </body>
 </html>
