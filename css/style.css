@@ -175,3 +175,17 @@ img { /* Make images on the site not draggable / selectable */
 .btn-submit:hover {
 	color: #d9d9d9 !important;
 }
+
+body.dark-mode label {
+    color: white;
+}
+
+body.dark-mode ::placeholder {
+    color: #d5d5d5;
+}
+
+body.dark-mode .form-control {
+    background-color: #333333;
+    border: 0;
+    color: #d5d5d5;
+}
