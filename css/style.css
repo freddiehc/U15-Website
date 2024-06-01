@@ -134,7 +134,7 @@ img { /* Make images on the site not draggable / selectable */
     border-radius: 6px;
     border: 1px solid #ccc;
     height: 120px;
-    width: 358px;
+    min-width: 358px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,6 +142,7 @@ img { /* Make images on the site not draggable / selectable */
     box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
     text-decoration: none;
     color: black !important;
+    margin-bottom: 10px;
 }
 
 .box:hover {
