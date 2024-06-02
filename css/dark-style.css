@@ -48,3 +48,19 @@ body.dark-mode .form-control {
     border: 0;
     color: #d5d5d5;
 }
+
+body.dark-mode .accordion>.card>.card-header {
+    background-color: #333333;
+}
+
+body.dark-mode .accordion>.card>.card-header h3 button {
+    color: #DEDEDE;
+}
+
+body.dark-mode .accordion>.card>.collapse.show>.card-body {
+    color: #999999;
+}
+
+body.dark-mode .indicator {
+    color: white;
+}

@@ -25,16 +25,8 @@ body {
     padding-right: 10px;
 }
 
-body.dark-mode .navbar-nav .nav-link {
-	color: #C5C5C5 !important;
-}
-
 .nav-item.active {
     color: black !important;
-}
-
-body.dark-mode .navbar-nav .nav-item.active .nav-link {
-	color: white !important;
 }
 
 .footer {
@@ -46,10 +38,6 @@ body.dark-mode .navbar-nav .nav-item.active .nav-link {
     background-color: #5C5C5C;
     color: white;
     font-size: 40px;
-}
-
-body.dark-mode .footer {
-    background-color: #373737;
 }
 
 .header-image {
@@ -70,11 +58,6 @@ body.dark-mode .footer {
     border-radius: 6px;
 }
 
-body.dark-mode .card {
-	background-color: #3C3C3C;
-	border: none;
-}
-
 .card-title {
     font-size: 33px;
     text-transform: uppercase;
@@ -86,26 +69,14 @@ body.dark-mode .card {
     text-align: center;
 }
 
-body.dark-mode .card-title {
-	color: white;
-}
-
 .card-subtitle {
     text-transform: uppercase;
     font-size: 16px;
 }
 
-body.dark-mode .card-subtitle {
-	color: #AFAFAF !important;
-}
-
 .card-text {
     font-weight: 500;
     font-size: 16px;
-}
-
-body.dark-mode .card-text {
-	color: #E0E0E0;
 }
 
 .row {
@@ -168,16 +139,38 @@ img { /* Make images on the site not draggable / selectable */
 	color: #d9d9d9 !important;
 }
 
-body.dark-mode label {
-    color: white;
+#accordion .collapsing {
+    transition: height 0.3s ease-in-out;
 }
 
-body.dark-mode ::placeholder {
-    color: #d5d5d5;
+.accordion>.card {
+    border: none;
 }
 
-body.dark-mode .form-control {
-    background-color: #333333;
-    border: 0;
-    color: #d5d5d5;
+.accordion>.card>.card-header {
+    padding: 0rem 1.25rem .3rem 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #DADADA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion>.card>.card-header h3 {
+    max-height: 35px;
+}
+
+.accordion>.card>.card-header h3 button {
+    font-size: 20px;
+}
+
+.accordion>.card>.card-header h3 .btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.accordion>.card {
+    margin: 5px 0;
+    border-radius: 10px;
 }
