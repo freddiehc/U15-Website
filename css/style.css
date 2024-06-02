@@ -12,14 +12,6 @@ body {
     margin-bottom: 150px;
 }
 
-body.dark-mode {
-	background-color: #535353 !important;
-}
-
-body.dark-mode .navbar {
-	background-color: #373737 !important;
-}
-
 .navbar-brand {
     color: #BD2C2C !important;
     font-size: 32px;
