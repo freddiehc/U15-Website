@@ -64,3 +64,11 @@ body.dark-mode .accordion>.card>.collapse.show>.card-body {
 body.dark-mode .indicator {
     color: white;
 }
+
+body.dark-mode .mt-5 {
+    background-color: #3C3C3C;
+}
+
+body.dark-mode .card.team-member {
+    background-color: #333333 !important;
+}
