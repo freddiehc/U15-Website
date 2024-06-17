@@ -237,3 +237,12 @@ img { /* Make images on the site not draggable / selectable */
     display: flex;
     min-width: 100%;
 }
+
+.stretched-link {
+    color: black;
+}
+
+.stretched-link:hover {
+    color: black;
+    text-decoration: none;
+}
